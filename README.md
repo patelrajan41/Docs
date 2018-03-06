@@ -1,4 +1,39 @@
+
+
+# snb-unity-client
+This is a repository for the slot unity client - Android & iOS.  
+
+# Unity Slot Demo
+This repository provides slot integration in unity engine.
+
+## Plug-In
+This  project consist of  
+* [Asset bundle browser](https://assetstore.unity.com/packages/tools/utilities/asset-bundle-browser-93571)
+* [Odin inspector](https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041)
+* [Json.net](https://assetstore.unity.com/packages/tools/input-management/json-net-for-unity-11)
+
+There are several steps that needs to be take care of:
+* [View Setup](#view-setup)
+
+* [Service Manager](#Service Manager)
+
+* [Slot Data](#Slot Data)
+
+* [Slot Machine UI](#Slot Machine UI)
+
+* [Asset Bundle](# Asset Bundle)
+
+##  View Setup
+View Controller is responsible for handling all views.
+
+-- Image Here --
+
+GameLoad event Occurs in ViewWelcome Script
+It will show all available games from webserver. This views are available in `ViewWelcome -> UICanvas -> ViewContent-> SlotSelectionScrollView -> Viewport -> Content`.
+
+
 # Slot UI
+
 ## Slot Controls
 
 #### Button Controls
@@ -77,3 +112,5 @@ It holds all the details regarding asset bundle.
 
 &nbsp;&nbsp;&nbsp;&nbsp; Asset Bundle : Currently loaded asset bundle
 
+## How to create Asset Bundle ?
+dfdf
