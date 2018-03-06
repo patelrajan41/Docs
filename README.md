@@ -143,7 +143,7 @@ WinText | Visible if user recently won something
 
 ## Asset Bundle
 
-## Asset Bundle Manager
+### Asset Bundle Manager
 
 It holds all the details regarding asset bundle.
 
@@ -156,3 +156,18 @@ It holds all the details regarding asset bundle.
 **Asset URL** : Target platform url will be assigned to this variable
 
 **Asset Bundle** : Currently loaded asset bundle
+
+### How to create Asset Bundle?
+
+Nowadays, Asset Bundle's are created using **Asset Bundle Browser** in Unity3D. It is the easiest way.
+
+1. Create new Asset Bundle from Asset Bundle Browser. For this Right Click in Asset Bundle Browser and Press **Add New Bundle**. Name it something. Ex. SampleSlotGame
+2. Select **SlotMachine** Prefab and all slot Symbol's Prefabs from Project Panel.
+> To ensure what will be included in asset bundle before creating it, Right Click on it and click **Select Dependencies**. It will show all the files selected which will be included in asset bundle.
+3. Switch to Asset Bundle Browser's *Configure* tab.
+4. Drag and Drop all selected prefabs into Asset Bundle Browser.
+5. Switch your tab from Configure to Build.
+6. Select your **Build Target**.
+7. Enter your output path. You can either copy and paste path or Browse it.
+8. Set **Compression** method to *Standard Compression (LZMA)*.
+9. Click on Build. On successful build, it will store newly created asset bundle to your output path.
