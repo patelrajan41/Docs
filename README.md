@@ -230,5 +230,36 @@ Nowadays, Asset Bundle's are created using **Asset Bundle Browser** in Unity3D. 
 ##  Free Spin
 
 ### Free Spin Manager
-### Free Spin UI
+If game slot supports free spin. Free Spin Manager scripts needs to be included into SlotMachine prefab as singleton script. It includes FreeSpin Data  Model Class instance. 
 
+Which consist of
+  - totalFreeSpins (total available free spins)
+  - pickedSymbol (symbol that is picked to expand)
+  - currentFreeSpin (current number of free spin)
+  - winAmount
+  
+This instance are re-populated during game load and each free spin event.
+
+* **Expand Data Dictionary**
+  
+  Which consist of
+  - expand symbol Id (Symbol that is being expanded during free spin event)
+  - wintype (explains the type of  win. i.e. 3 of a kind, 4 of a kind, etc.)
+  - winLineId (explains  the win line Id)
+  - winAmount (explains the winning amount to the particular free spin)
+
+### Free Spin UI
+All free spin ui is handled by free spin ui manager singleton instance.
+
+* Free spin event is divided into 4 state.
+  1. Initial state (It is assigned when Free spin is awarded)
+  2. Expanding Selection Mode (state when free spinUI is animating to select)
+  3. Expand Mode (state when expand selection mode is already awarded and looking to find any expand symbol. Sometimes when user is logging in and he/she already have free spin then it will directly assigned to expand symbol mode)
+  4. End Spin (state when free spin ends)
+
+* There are mainly 4 UI that needs to be handled.
+  * Free spin awardUI.
+  * Selecting expand symbol UI
+  * Extra Free Spin UI
+  * Spin Ends Spin UI
+  * Free Spin UI Calculations
