@@ -47,4 +47,4 @@ WinText | Visible if user recently won something
 
 **Paylines** : It contains data for all paylines in binary format. Ex. 010 010 010 010 010. Column is specified by space in following example.
 
-**Payout** : It is calculated by, Mutliplying CurrentBetAmount with `* of Kind` win's multiplier.
+**Payout** : It is calculated by *Mutliplying CurrentBetAmount with `* of Kind` win's multiplier.*
