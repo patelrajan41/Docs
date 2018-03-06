@@ -143,4 +143,16 @@ WinText | Visible if user recently won something
 
 ## Asset Bundle
 
-Asset Bundle Data Here.
+## Asset Bundle Manager
+
+It holds all the details regarding asset bundle.
+
+**Standalone URL** : It is the link of Assest Bundle for PC (Windows, Linux, Mac)
+
+**Android URL** : It is the link of Assest Bundle for all Android devices including tablets, samrtphones.
+
+**iOS URL** : It is the link of Assest Bundle for all iOS devices including iPads, iPhone.
+
+**Asset URL** : Target platform url will be assigned to this variable
+
+**Asset Bundle** : Currently loaded asset bundle
