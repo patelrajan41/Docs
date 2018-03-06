@@ -54,28 +54,55 @@ Service Manager Script contains following properties :
 **Create Slot with Asset Bundle** : It is boolean value. If true then Asset Bundle will be downloaded from URL else it will load from local asset bundle.
 
 ## Slot Data
+Contains almost all slot data.
 
-*Show current configuration of Slot in Unity Inspector. It includes following data:*
+* **Slot Symbol Dictionary**
 
-**Slot Symbol Dictionary** : Contains all the slot symbols that were used in current game
+  Contains info for each symbol  such as :
+   - id (id of symbol)
+   - name (name of symbol)
+   - type (type of symbol (i.e. wild, scatter, etc.))
+   - uri  (URI of symbol image)
+   - slot symbol sprite (sprite of symbol created from image uri or asset bundle GameObject)
 
-**Initial Reel Dictionary** : Symbols that will be shown to user when reels stops.
+* **Initial Reel Dictionary** : Contains symbol id to populate initial reel before spin.
 
-**Spin Slot Reel Dictionary** : Symbols in specific reel. It size may differ for each reel.
+* **Spin Slot Reel Dictionary**
 
-**Player Statistics** : 
+  Contains series of symbols along with result symbol.
+  Player statistics: Contains user statistics data
+   - line(total lines to bat)
+   - bet (bet for current line)
+   - total bet
+   - balance (wallet amount of user)
 
-&nbsp;&nbsp;&nbsp;&nbsp; Line : Show current selected win lines
+* **Paylines** : List of ids of paylines
+  
+* **Payline Dictionary**
 
-&nbsp;&nbsp;&nbsp;&nbsp; Bet : show current bet amount
+  Contains paylines as id and sequence of position in all reeels.
+   (i.e. 01112=>
+   0-Reel1->row1
+   1-Reel2->row2
+   1-Reel3->row2
+   1-Reel4->row2
+   2-Reel5->row3)
 
-&nbsp;&nbsp;&nbsp;&nbsp; Total Bet : Show total bet amount (BetValue * Lines)
+* **Winnings**
+  - Win coins
+  - Win lines count
+  - List of winlines
 
-&nbsp;&nbsp;&nbsp;&nbsp; Balance : Show current remaining balance
+* **total row** :  Total row in slot
 
-**Paylines** : It contains data for all paylines in binary format. Ex. 010 010 010 010 010. Column is specified by space in following example.
+* **total col** :  Total col in slot
 
-**Payout** : It is calculated by *Mutliplying CurrentBetAmount with `* of Kind` win's multiplier.*
+* **Payout Dictionary**
+
+  Contains payout info for each symbol.
+   - combination (i.e 3 of a kind, 4 of a kind , etcetera)
+   - amount 
+   - multiplier
 
 ## Game Manager
 
