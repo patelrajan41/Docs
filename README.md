@@ -55,10 +55,25 @@ It holds [SlotData](#slot-data) and Game Property.
 
 **Game Property** contains following properties :
 
-&nbsp;&nbsp;&nbsp;&nbsp; Game Logo : Link of a logo image for currently loaded game
+&nbsp;&nbsp;&nbsp;&nbsp; **Game Logo** : Link of a logo image for currently loaded game
 
-&nbsp;&nbsp;&nbsp;&nbsp; Game Name : Game name of currently loaded game
+&nbsp;&nbsp;&nbsp;&nbsp; **Game Name** : Game name of currently loaded game
 
-&nbsp;&nbsp;&nbsp;&nbsp; Version Name : Version name for the currently loaded game
+&nbsp;&nbsp;&nbsp;&nbsp; **Version Name** : Version name for the currently loaded game
 
-&nbsp;&nbsp;&nbsp;&nbsp; Game ID : A unique id of a currently loaded game
+&nbsp;&nbsp;&nbsp;&nbsp; **Game ID** : A unique id of a currently loaded game
+
+## Asset Bundle Manager
+
+It holds all the details regarding asset bundle.
+
+&nbsp;&nbsp;&nbsp;&nbsp; Standalone URL : It is the link of Assest Bundle for PC (Windows, Linux, Mac)
+
+&nbsp;&nbsp;&nbsp;&nbsp; Android URL : It is the link of Assest Bundle for all Android devices including tablets, samrtphones.
+
+&nbsp;&nbsp;&nbsp;&nbsp; iOS URL : It is the link of Assest Bundle for all iOS devices including iPads, iPhone.
+
+&nbsp;&nbsp;&nbsp;&nbsp; Asset URL : Target platform url will be assigned to this variable
+
+&nbsp;&nbsp;&nbsp;&nbsp; Asset Bundle : Currently loaded asset bundle
+
