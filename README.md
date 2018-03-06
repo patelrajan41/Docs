@@ -51,7 +51,7 @@ WinText | Visible if user recently won something
 
 ## Game Manager
 
-It holds [SlotData](#Slot-Data) and Game Property.
+It holds [SlotData](#slot-data) and Game Property.
 
 **Game Property** contains following properties :
 
