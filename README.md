@@ -93,6 +93,18 @@ It holds [SlotData](#slot-data) and Game Property.
 
 ## Slot Machine UI
 
+### Winnnings UI
+
+Shows particles around winning symbol and shows winning lines on slot win and free spin expand win.
+
+It has some events listed below:
+
+**AnimateWinLine** : It consist of each win line. Used to show win line one by one or all at once.
+
+**AnimateSymbolInLine** : Used to animate symbol when it is the part of winning combination.
+
+**ResetAnimatingSymbol** : Clears UI when no need to animate Winnings UI.
+
 ### Slot Controls
 
 ##### Button Controls
@@ -109,7 +121,7 @@ Lines - Increase | Increase win lines | SlotUI.IncreaseBetLineButtonTapped
 Lines - Decrease | Decrease win lines | SlotUI.DecreaseBetLineButtonTapped
 Navigate to Paytable | Show all the information regarding Paytable | SlotUI.PayoutButtonClicked
 
-###### Text Controls
+##### Text Controls
 
 Control | Description
 :---: | ---
