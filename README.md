@@ -15,11 +15,11 @@ This  project consist of
 There are several steps that needs to be take care of:
 * [View Setup](#view-setup)
 
-* [Service Manager](#Service Manager)
+* [Service Manager](#service-manager)
 
-* [Slot Data](#Slot Data)
+* [Slot Data](#slot-data)
 
-* [Slot Machine UI](#Slot Machine UI)
+* [Slot Machine UI](#slot-machine-ui)
 
 * [Asset Bundle](# Asset Bundle)
 
@@ -31,34 +31,9 @@ View Controller is responsible for handling all views.
 GameLoad event Occurs in ViewWelcome Script
 It will show all available games from webserver. This views are available in `ViewWelcome -> UICanvas -> ViewContent-> SlotSelectionScrollView -> Viewport -> Content`.
 
+## Service Manager
 
-# Slot UI
-
-## Slot Controls
-
-#### Button Controls
-
-Control | Description| Method to Call
-:---: | --- | :---:
-Spin | Start Spin | SlotUI.SpinButtonTapped
-Auto | Spin Automatically until user stops it | SlotUI.AutoButtonTapped
-Turbo | All reels rotate at once | SlotUI.TurboButtonTapped
-MaxBet | Set current bet value to maximum from predefined array of values | SlotUI.MaxBetButtonTapped
-Bet - Increase | Increase bet value from predefined array of values | SlotUI.IncreaseBetAmountButtonTapped
-Bet - Decrease | Decrease bet value from predefined array of values | SlotUI.DecreaseBetAmountButtonTapped
-Lines - Increase | Increase win lines | SlotUI.IncreaseBetLineButtonTapped
-Lines - Decrease | Decrease win lines | SlotUI.DecreaseBetLineButtonTapped
-Navigate to Paytable | Show all the information regarding Paytable | SlotUI.PayoutButtonClicked
-
-#### Text Controls
-
-Control | Description
-:---: | ---
-BetValue | Show current bet amount
-LinesValue | Show current selected win lines
-TotalBetValue | Show total bet amount (BetValue * Lines)
-BalanceValue | Show current remaining balance
-WinText | Visible if user recently won something
+Service Manager Detail Here.
 
 ## Slot Data
 
@@ -98,19 +73,34 @@ It holds [SlotData](#slot-data) and Game Property.
 
 &nbsp;&nbsp;&nbsp;&nbsp; **Game ID** : A unique id of a currently loaded game
 
-## Asset Bundle Manager
+## Slot Machine UI
 
-It holds all the details regarding asset bundle.
+#### Slot Controls
 
-&nbsp;&nbsp;&nbsp;&nbsp; Standalone URL : It is the link of Assest Bundle for PC (Windows, Linux, Mac)
+###### Button Controls
 
-&nbsp;&nbsp;&nbsp;&nbsp; Android URL : It is the link of Assest Bundle for all Android devices including tablets, samrtphones.
+Control | Description| Method to Call
+:---: | --- | :---:
+Spin | Start Spin | SlotUI.SpinButtonTapped
+Auto | Spin Automatically until user stops it | SlotUI.AutoButtonTapped
+Turbo | All reels rotate at once | SlotUI.TurboButtonTapped
+MaxBet | Set current bet value to maximum from predefined array of values | SlotUI.MaxBetButtonTapped
+Bet - Increase | Increase bet value from predefined array of values | SlotUI.IncreaseBetAmountButtonTapped
+Bet - Decrease | Decrease bet value from predefined array of values | SlotUI.DecreaseBetAmountButtonTapped
+Lines - Increase | Increase win lines | SlotUI.IncreaseBetLineButtonTapped
+Lines - Decrease | Decrease win lines | SlotUI.DecreaseBetLineButtonTapped
+Navigate to Paytable | Show all the information regarding Paytable | SlotUI.PayoutButtonClicked
 
-&nbsp;&nbsp;&nbsp;&nbsp; iOS URL : It is the link of Assest Bundle for all iOS devices including iPads, iPhone.
+###### Text Controls
 
-&nbsp;&nbsp;&nbsp;&nbsp; Asset URL : Target platform url will be assigned to this variable
+Control | Description
+:---: | ---
+BetValue | Show current bet amount
+LinesValue | Show current selected win lines
+TotalBetValue | Show total bet amount (BetValue * Lines)
+BalanceValue | Show current remaining balance
+WinText | Visible if user recently won something
 
-&nbsp;&nbsp;&nbsp;&nbsp; Asset Bundle : Currently loaded asset bundle
+## Asset Bundle
 
-## How to create Asset Bundle ?
-dfdf
+Asset Bundle Data Here.
