@@ -23,6 +23,8 @@ There are several steps that needs to be take care of:
 
 * [Asset Bundle](#asset-bundle)
 
+* [Free Spin](#free-spin)
+
 ##  View Setup
 View Controller is responsible for handling all views.
 
@@ -224,3 +226,9 @@ Nowadays, Asset Bundle's are created using **Asset Bundle Browser** in Unity3D. 
 > You can add condition by clicking plus button under `Conditions` in Inspector.
 12. Select transition `Symbol` to `SymbolDefault`. Uncheck `Has Exit Time` parameter from inspector. Add condition `IsAnimated`. Set it to false.
 13. Drag `GameObject` from `Hierarchy` to `Project`. Now your symbol prefab is ready to use. You can create all other symbol's prefab following this steps.
+
+##  Free Spin
+
+### Free Spin Manager
+### Free Spin UI
+
