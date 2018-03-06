@@ -21,7 +21,7 @@ There are several steps that needs to be take care of:
 
 * [Slot Machine UI](#slot-machine-ui)
 
-* [Asset Bundle](# Asset Bundle)
+* [Asset Bundle](#asset-bundle)
 
 ##  View Setup
 View Controller is responsible for handling all views.
