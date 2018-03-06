@@ -37,7 +37,7 @@ All Web API are handled in ServiceManager singleton script. It is responsible to
 
 **LoadGameList** : Loads all available list of games into the game.
 
-**Load SlotSymbols** : Loads all symbols from specified slot game.
+   **Load SlotSymbols** : Loads all symbols from specified slot game.
 
 **Load GameData** : Loads all initial game data from specified slot game.
 
@@ -52,6 +52,12 @@ All Web API are handled in ServiceManager singleton script. It is responsible to
 **Decrease Bet Amount** : Request to Decrease Bet Amount
 
 **Max Bet** : Request to create Max Bet
+
+Service Manager Script contains following properties :
+
+**Link** : URL for API
+
+**Create Slot with Asset Bundle** : It is boolean value. If true then Asset Bundle will be downloaded from URL else it will load from local asset bundle.
 
 ## Slot Data
 
@@ -171,3 +177,24 @@ Nowadays, Asset Bundle's are created using **Asset Bundle Browser** in Unity3D. 
 7. Enter your output path. You can either copy and paste path or Browse it.
 8. Set **Compression** method to *Standard Compression (LZMA)*.
 9. Click on Build. On successful build, it will store newly created asset bundle to your output path.
+
+### How to create slot Symbol animation prefab?
+
+1. Add new game object `Image` into Hierarchy. Set it's width and height according to symbol image resolution.
+2. Rename it to Symbol ID from API response. To do so you can also get ID of Symbol from SlotData.
+3. You need to create two animation clip for it.
+   - `SymbolDefault`
+   - `Symbol`
+> To create animation clip, Select animation panel and press Create while GameObject is selected.
+4. Drag symbol image into `Source Image` in `Inspector` under `Image` Component.
+5. Now switch to Animation Panel and select `SymbolDefault` clip.
+6. Drag first sprite of sprite sheet into animation view.
+7. Now select `Symbol` clip. Add all sprites into it and adjust your animation like duration, samples, etc.
+8. Now open Animation Panel. `SymbolDefault` clip already added. Add `Symbol` clip into view.
+9. Add `Bool` parameter. Rename it as `IsAnimated`. Uncheck it if it is already checked.
+10. Right click on `SymbolDefault` and `Make Transition` to `Symbol`. Do in reverse order to. `Symbol` to `SymbolDefault`.
+11. Select transition `SymbolDefault` to `Symbol`. Uncheck `Has Exit Time` parameter from inspector. Add condition `IsAnimated`. Set it to true.
+> You can add condition by clicking plus button under `Conditions` in Inspector.
+12. Select transition `Symbol` to `SymbolDefault`. Uncheck `Has Exit Time` parameter from inspector. Add condition `IsAnimated`. Set it to false.
+13. Drag `GameObject` from `Hierarchy` to `Project`. Now your symbol prefab is ready to use. You can create all other symbol's prefab following this steps.
+
