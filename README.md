@@ -169,7 +169,7 @@ Nowadays, Asset Bundle's are created using **Asset Bundle Browser** in Unity3D. 
 
 1. Create new Asset Bundle from Asset Bundle Browser. For this Right Click in Asset Bundle Browser and Press **Add New Bundle**. Name it something. Ex. SampleSlotGame
 2. Select **SlotMachine** Prefab and all slot Symbol's Prefabs from Project Panel.
-> To ensure what will be included in asset bundle before creating it, Right Click on it and click **Select Dependencies**. It will show all the files selected which will be included in asset bundle.
+> To ensure what will be included in asset bundle before creating it, Right Click on selected prefabs and click **Select Dependencies**. It will show all the files selected which will be included in asset bundle.
 3. Switch to Asset Bundle Browser's *Configure* tab.
 4. Drag and Drop all selected prefabs into Asset Bundle Browser.
 5. Switch your tab from Configure to Build.
@@ -197,4 +197,3 @@ Nowadays, Asset Bundle's are created using **Asset Bundle Browser** in Unity3D. 
 > You can add condition by clicking plus button under `Conditions` in Inspector.
 12. Select transition `Symbol` to `SymbolDefault`. Uncheck `Has Exit Time` parameter from inspector. Add condition `IsAnimated`. Set it to false.
 13. Drag `GameObject` from `Hierarchy` to `Project`. Now your symbol prefab is ready to use. You can create all other symbol's prefab following this steps.
-
