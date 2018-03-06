@@ -105,6 +105,16 @@ It has some events listed below:
 
 **ResetAnimatingSymbol** : Clears UI when no need to animate Winnings UI.
 
+### Paytable Popup 
+
+As per design slot info, It  may have different interaction with UI (i.e. sliders, tab, popups, etcetra)
+
+UIScript should be created to interact with these kind of UI.
+
+* The script must have following name space. `Games.CasinoSlot.slotName`
+* Must override UIPopupMenu script
+* All the UI event must be handle by this script.
+
 ### Slot Controls
 
 ##### Button Controls
