@@ -81,11 +81,17 @@ Contains almost all slot data.
 * **Payline Dictionary**
 
   Contains paylines as id and sequence of position in all reeels.
+  
    (i.e. 01112=>
+   
    0-Reel1->row1
+   
    1-Reel2->row2
+   
    1-Reel3->row2
+   
    1-Reel4->row2
+   
    2-Reel5->row3)
 
 * **Winnings**
