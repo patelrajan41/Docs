@@ -48,3 +48,17 @@ WinText | Visible if user recently won something
 **Paylines** : It contains data for all paylines in binary format. Ex. 010 010 010 010 010. Column is specified by space in following example.
 
 **Payout** : It is calculated by *Mutliplying CurrentBetAmount with `* of Kind` win's multiplier.*
+
+## Game Manager
+
+It holds [SlotData](#Slot-Data) and Game Property.
+
+**Game Property** contains following properties :
+
+&nbsp;&nbsp;&nbsp;&nbsp; Game Logo : Link of a logo image for currently loaded game
+
+&nbsp;&nbsp;&nbsp;&nbsp; Game Name : Game name of currently loaded game
+
+&nbsp;&nbsp;&nbsp;&nbsp; Version Name : Version name for the currently loaded game
+
+&nbsp;&nbsp;&nbsp;&nbsp; Game ID : A unique id of a currently loaded game
