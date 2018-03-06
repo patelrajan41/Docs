@@ -33,7 +33,25 @@ It will show all available games from webserver. This views are available in `Vi
 
 ## Service Manager
 
-Service Manager Detail Here.
+All Web API are handled in ServiceManager singleton script. It is responsible to  populate all game data into the game.
+
+**LoadGameList** : Loads all available list of games into the game.
+
+**Load SlotSymbols** : Loads all symbols from specified slot game.
+
+**Load GameData** : Loads all initial game data from specified slot game.
+
+**Load  Paytable** : Loads all paytable data and store into payout hashtable.
+
+**Increase BetLine** : Request to Increase BetLine
+
+**Decrease BetLine** : Request to Dcrease BetLine
+
+**Increase Bet Amount** : Request to Increase Bet Amount
+
+**Decrease Bet Amount** : Request to Decrease Bet Amount
+
+**Max Bet** : Request to create Max Bet
 
 ## Slot Data
 
@@ -75,9 +93,9 @@ It holds [SlotData](#slot-data) and Game Property.
 
 ## Slot Machine UI
 
-#### Slot Controls
+### Slot Controls
 
-###### Button Controls
+##### Button Controls
 
 Control | Description| Method to Call
 :---: | --- | :---:
