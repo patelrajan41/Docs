@@ -21,6 +21,30 @@ Control | Description
 :---: | ---
 BetValue | Show current bet amount
 LinesValue | Show current selected win lines
-TotalBetValue | Show total bet amount (Bet Amount * Lines)
+TotalBetValue | Show total bet amount (BetValue * Lines)
 BalanceValue | Show current remaining balance
 WinText | Visible if user recently won something
+
+## Slot Data
+
+*Show current configuration of Slot in Unity Inspector. It includes following data:*
+
+**Slot Symbol Dictionary** : Contains all the slot symbols that were used in current game
+
+**Initial Reel Dictionary** : Symbols that will be shown to user when reels stops.
+
+**Spin Slot Reel Dictionary** : Symbols in specific reel. It size may differ for each reel.
+
+**Player Statistics** : 
+
+&nbsp;&nbsp;&nbsp;&nbsp; Line : Show current selected win lines
+
+&nbsp;&nbsp;&nbsp;&nbsp; Bet : show current bet amount
+
+&nbsp;&nbsp;&nbsp;&nbsp; Total Bet : Show total bet amount (BetValue * Lines)
+
+&nbsp;&nbsp;&nbsp;&nbsp; Balance : Show current remaining balance
+
+**Paylines** : It contains data for all paylines in binary format. Ex. 010 010 010 010 010. Column is specified by space in following example.
+
+**Payout** : It is calculated by, Mutliplying CurrentBetAmount with `* of Kind` win's multiplier.
