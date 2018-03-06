@@ -1,3 +1,3 @@
 # Slot UI
 ## Slot Controls
-#### Spin - 
+#### Spin - Start spin. Call **SlotUI.SpinButtonTapped method** to start spin.
