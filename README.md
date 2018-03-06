@@ -19,8 +19,8 @@ Navigate to Paytable | Show all the information regarding Paytable | SlotUI.Payo
 
 Control | Description
 :---: | ---
-Bet Value | Show current bet amount
-Lines Value | Show current selected win lines
-Total Bet Value | Show total bet amount (Bet Amount * Lines)
-Balance Value | Show current remaining balance
-Win Text | Visible if user recently won something
+BetValue | Show current bet amount
+LinesValue | Show current selected win lines
+TotalBetValue | Show total bet amount (Bet Amount * Lines)
+BalanceValue | Show current remaining balance
+WinText | Visible if user recently won something
